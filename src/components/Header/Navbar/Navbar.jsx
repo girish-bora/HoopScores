@@ -11,9 +11,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-primary w-full h-20 px-2 sm:px-4 lg:px-8 flex justify-between items-center">
+    <nav className="bg-primary w-full h-20 font-inter px-2 sm:px-4 lg:px-8 flex justify-between items-center">
       <div className="w-20">
-        <img src={logo} alt="logo" className="bg-contain w-full" />
+        <Link to="/">
+          <img
+            src={logo}
+            alt="logo"
+            className="bg-contain w-full cursor-pointer"
+          />
+        </Link>
       </div>
       <ul
         className={`${
